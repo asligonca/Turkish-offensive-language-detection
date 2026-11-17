@@ -1,0 +1,187 @@
+# Turkish offensive-language seed lexicon
+# Format:
+#   - one term per line, lowercase
+#   - a line starting with "#" sets the category for the terms below it
+#     (the first lines here are just comments; the last "#" line before a
+#     term is its category)
+#   - a trailing "$" means whole-word only: use it for short or ambiguous
+#     terms (e.g. "göt$" so that "götürmek" doesn't match)
+#   - without "$" a term also matches with suffixes (şerefsiz -> şerefsizler)
+#   - multi-word phrases are fine ("mal herif")
+#   - matching ignores case, apostrophes, leetspeak (s1kt1r), dots/spaces
+#     between single letters (a.q, o.ç) and stretched letters (siktirrrr)
+#
+# Precision notes (every hit marks a post "offensive_candidate"):
+#   - ASCII spellings (serefsiz, amcik ...) are listed explicitly. The matcher
+#     does NOT fold ı->i, because then "sık sık" / "sıkıntı" would hit "sik...".
+#   - Words with a common harmless meaning only appear as phrases:
+#     mal (goods), alçak (low), pislik (dirt), ezik (crushed), aşağılık
+#     (aşağılık kompleksi), boynuzlu (horned animal).
+#   - Deliberately left out: lan/ulan (filler), kaşar (cheese), top (ball),
+#     dönme, bare "sik", and neutral identity words (ethnicities, religions,
+#     nationalities): those would flag neutral posts and bias the model.
+#
+# This is a SEED list. Extend it for your project; keyword hits are weak labels.
+
+# profanity
+amk
+amq$
+aq$
+mk$
+mq$
+amına
+amına koyayım
+amına koyim
+amınakoyim
+amina
+aminakoyim
+amcık
+amcik
+siktir
+siktir git
+siktirgit
+hassiktir
+hasiktir
+sktr$
+sikerim
+sikeyim
+sikiyim
+siktiğim
+siktigim
+sikik
+sikiş
+sikim$
+sikimde
+sikko
+yarrak
+yarrağ
+yarram$
+yarak$
+dalyarak
+taşak
+göt$
+götü$
+götün$
+götünü
+götüne
+götveren
+gotveren
+götlek
+gotlek
+bok$
+boka$
+bokunu
+boktan
+bok gibi
+orospu
+orosbu
+oruspu
+orspu
+oç$
+kahpe
+kahbe
+pezevenk
+pezo$
+gavat
+kaltak
+sürtük
+surtuk
+kevaşe
+kevase
+fahişe
+fahise
+şıllık
+piç
+pic$
+puşt
+pust$
+deyyus
+
+# insult
+şerefsiz
+serefsiz
+namussuz
+haysiyetsiz
+onursuz
+soysuz
+karaktersiz
+yavşak
+yavsak
+gerizekalı
+geri zekalı
+gerizekali
+geri zekali
+gerzek
+salak
+aptal
+ahmak
+budala
+andaval
+angut
+avanak
+zibidi
+dangalak
+mankafa
+beyinsiz
+kafasız
+embesil
+dallama
+denyo
+lavuk
+hödük
+kıro
+keko$
+döl israfı
+it oğlu it
+mal herif
+malsın
+malsin$
+mal mısın
+öküz herif
+eşek herif
+eşşek
+eşşoğlu
+hayvan herif
+it herif
+köpek herif
+ayı herif
+adi herif
+alçak herif
+aşağılık herif
+boynuzlu herif
+pislik herif
+pisliksin
+ezik herif
+eziksin
+
+# identity-based
+ibne
+ipne
+götoş
+gavur
+yobaz
+kezo$
+
+# curse
+belanı versin
+allahın belası
+kahrolası
+kahrolsun
+geber$
+gebersin
+geberesice
+canın cehenneme
+cehenneme git
+
+# threat
+seni öldürürüm
+seni öldüreceğim
+öldüreceğim seni
+gebertirim
+kafana sıkarım
+kafanı kırarım
+kemiklerini kırarım
+ağzını burnunu kırarım
+ananı ağlatırım
+doğduğuna pişman ederim
+evini yakarım
