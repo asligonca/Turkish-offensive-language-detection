@@ -1,0 +1,77 @@
+Screen {
+    layout: vertical;
+}
+
+#tabs {
+    height: 1fr;
+}
+
+.group {
+    height: auto;
+    border: round $primary;
+    padding: 0 1;
+    margin: 0 1 1 1;
+}
+
+.group-title {
+    text-style: bold;
+    color: $accent;
+    margin-bottom: 1;
+}
+
+.row {
+    height: auto;
+    margin-bottom: 1;
+}
+
+.field-label {
+    width: 16;
+    padding-top: 1;
+}
+
+.row Input,
+.row Select {
+    width: 1fr;
+}
+
+#tw-count, #eksi-count,
+#off-tw-count, #off-eksi-count, #off-ratio {
+    width: 14;
+}
+
+#load-trends {
+    margin-left: 1;
+}
+
+.actions {
+    height: auto;
+    align: right middle;
+    padding: 0 1;
+}
+
+.actions Checkbox {
+    margin-right: 2;
+}
+
+.help {
+    padding: 1 2;
+    color: $text-muted;
+}
+
+#accounts-table {
+    height: auto;
+    min-height: 5;
+    max-height: 14;
+    margin: 0 1;
+}
+
+#log {
+    height: 12;
+    border: round $secondary;
+    border-title-align: left;
+    margin: 0 1;
+}
+
+.hidden {
+    display: none;
+}
