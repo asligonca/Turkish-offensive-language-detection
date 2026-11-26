@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+- family-names: "Tokdemir"
+  given-names: "Doğan Orhun"
+  orcid: "https://orcid.org/0009-0003-2541-0794"
+title: "anonymized-tweet-scraper"
+version: 1.0.0
+date-released: 2026-11-24
+url: "https://github.com/OrhunTokdemir/anonymized-tweet-scraper"
+license: MIT
+abstract: >-
+  A terminal application that collects public posts from Twitter/X and
+  Ekşi Sözlük, anonymizes them, and writes them to CSV for research. It
+  includes a batch mode that builds Turkish offensive-language datasets
+  from a seed lexicon, with weakly labeled offensive candidates and
+  control posts.
+keywords:
+  - web scraping
+  - twitter
+  - ekşi sözlük
+  - anonymization
+  - turkish
+  - offensive language
+  - natural language processing
+  - dataset
